@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class Statistics {
 
-    public float getAverage(int[] arr) {
+    public int getAverage(int[] arr) {
         int sum = 0;
         int num = arr.length;
         for(int i = 0; i < num; i++) {
@@ -40,16 +40,16 @@ public class Statistics {
             }
         }
 
-        //modeNum 최대값의 인덱스 구하는 코드
-        int idx = 0;
-        int modeNumMax = 0;
-        for (modeN : modeNum) {
-            int num = modeNum[i];
-            modeNumMax = Math.max(num, modeNumMax);
-        }
-
-        mode = arr[idx];
-        Arrays.sort(modeNum);
+//        //modeNum 최대값의 인덱스 구하는 코드
+//        int idx = 0;
+//        int modeNumMax = 0;
+//        for (modeN : modeNum) {
+//            int num = modeNum[i];
+//            modeNumMax = Math.max(num, modeNumMax);
+////        }
+//
+//        mode = arr[idx];
+//        Arrays.sort(modeNum);
         return modeNum[modeNum.length - 1];
     }
 

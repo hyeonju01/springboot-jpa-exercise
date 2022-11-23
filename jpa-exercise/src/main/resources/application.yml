@@ -1,0 +1,14 @@
+server:
+  servlet:
+    encoding:
+      force-response: true
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://ec2-3-34-28-32.ap-northeast-2.compute.amazonaws.com:3306/db_exercise2
+    username: root
+    password: password

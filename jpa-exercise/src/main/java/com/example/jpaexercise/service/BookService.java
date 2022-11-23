@@ -29,6 +29,4 @@ public class BookService {
                 ).collect(Collectors.toList());
         return bookResponse;
     }
-
-
 }
